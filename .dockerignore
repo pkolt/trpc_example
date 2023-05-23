@@ -1,0 +1,12 @@
+.DS_Store
+.git
+.vscode
+node_modules
+npm-debug.log
+*Dockerfile*
+*compose*
+.dockerignore
+data
+README.md
+.prettierrc
+*.sh

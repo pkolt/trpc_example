@@ -1,0 +1,23 @@
+{
+  "name": "wisdom",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">= 18"
+  },
+  "workspaces": [
+    "./backend",
+    "./frontend"
+  ],
+  "scripts": {
+    "build-backend": "npm run build -w ./backend",
+    "build-frontend": "npm run build -w ./frontend",
+    "build": "npm run build --workspaces",
+    "format": "npm run format --workspaces",
+    "format-fix": "npm run format:fix --workspaces",
+    "dev-backend": "npm run dev -w ./backend",
+    "dev-frontend": "npm run dev -w ./frontend",
+    "lint-frontend": "npm run lint -w ./frontend"
+  }
+}

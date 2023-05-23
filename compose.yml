@@ -1,0 +1,14 @@
+name: example-trpc
+
+services:
+  db:
+    container_name: db
+    image: mariadb:10.9.4
+    restart: always
+    environment:
+      - MARIADB_DATABASE=example_trpc
+      - MARIADB_ROOT_PASSWORD=12345
+    ports:
+      - 3306:3306
+    volumes:
+      - ./data/mariadb:/var/lib/mysql
